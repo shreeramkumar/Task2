@@ -1,0 +1,62 @@
+* {
+    box-sizing: border-box;
+  }
+  img{
+    margin-top: 50px;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: url(tr.gif);
+    background-size: cover;
+  }
+  /* Style the header */
+  header {
+    padding: 30px;
+    text-align: center;
+    font-size: 55px;
+    color:white;
+    border: 2px solid black;
+    
+  }
+  article {
+    float: right;
+    font-weight:bolder ;
+    padding:32px 20px;
+    width: 83%;
+    margin-top: 35px ;
+    color:w;
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2); 
+    backdrop-filter: blur(5px);
+    background-color: rgba(255, 255, 255, 0.226);
+    height: 500px; /* only for demonstration, should be removed */
+  }
+  /* Clear floats after the columns */
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .tacbox {
+    display:block;
+    padding: 1em;
+    margin: 0em;
+    border: 2px solid black;
+    background-color: white;
+    max-width: 800px;
+  }
+  
+  /* Style the footer */
+  footer {
+    background-color: black;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    margin-top: 300px;
+  }
+  /* Responsive layout - makes the two columns/boxes stack on top of each other instead of next to each other, on small screens */
+  @media (max-width: 600px) {
+    nav, article {
+      width: 100%;
+      height: auto;
+    }
+}
